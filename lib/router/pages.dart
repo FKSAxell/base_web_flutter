@@ -15,16 +15,23 @@ abstract class AppPages {
       transitionDuration: 0.milliseconds,
     ),
     GetPage(
+      name: Routes.STATEFUL + "/:base",
+      page: () => CounterView(),
+      transition: Transition.noTransition,
+      transitionDuration: 0.milliseconds,
+    ),
+    GetPage(
       name: Routes.PROVIDER,
       page: () => CounterProviderView(),
       transition: Transition.noTransition,
       transitionDuration: 0.milliseconds,
     ),
-    GetPage(
-      name: Routes.UNKNOW,
-      page: () => View404(),
-      transition: Transition.noTransition,
-      transitionDuration: 0.milliseconds,
-    ),
   ];
+
+  static final unknownPage = GetPage(
+    name: '/notfound',
+    page: () => View404(),
+    transition: Transition.noTransition,
+    transitionDuration: 0.milliseconds,
+  );
 }

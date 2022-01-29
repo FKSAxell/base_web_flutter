@@ -31,6 +31,14 @@ class _TabletDesktopMenu extends StatelessWidget {
             width: 10,
           ),
           CustomFlatButton(
+            text: "Contador Stateful2",
+            onPressed: () => Get.toNamed(Routes.STATEFUL + "/100"),
+            color: Colors.black,
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          CustomFlatButton(
             text: "Contador Provider",
             onPressed: () => Get.toNamed(Routes.PROVIDER),
             color: Colors.black,
@@ -61,6 +69,14 @@ class _MobileMenu extends StatelessWidget {
           CustomFlatButton(
             text: "Contador Stateful",
             onPressed: () => Get.toNamed(Routes.STATEFUL),
+            color: Colors.black,
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          CustomFlatButton(
+            text: "Contador Stateful2",
+            onPressed: () => Get.toNamed(Routes.STATEFUL + "/100"),
             color: Colors.black,
           ),
           SizedBox(
